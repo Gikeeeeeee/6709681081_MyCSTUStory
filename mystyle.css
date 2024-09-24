@@ -1,3 +1,6 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Varela+Round&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,29 +20,77 @@ button {
 
 body {
     display: block;
+    height: 100%;
+    max-height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--color-title);
+    padding: 0 25px;
 }
+
+:root {
+    --main-bg-color: #B7B7B7;
+    --sup-bg-color: #F5F5F7;
+    --color-title: #5a4840;
+    --color-text: #705C53;
+}
+
 /* =========Navigation bar Start========= */
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: red;
+    height: 8vh;
+    font-family: "Old Standard TT", serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+nav p {
+    display: flex;
+    font-size: 10px;
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav .nav_items .item {
-    font-size: 10px;
-    margin: 5px 10px;
-    color: black;
-    height: 20px;
-    line-height: 20px;
-    transition: font-size 0.3s ease;
+    margin-left: 8px;
 }
 
-nav .nav_items .item:hover {
-    font-size: 12px;
+nav .nav_items .item a {
+    font-size: 10px;
+    color: var(--color-title); 
+    transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+nav .nav_items .item a:hover {
+    font-size: 12px; 
+    color: var(--color-title); 
 }
 /* =========Navigation bar End========= */
+/* =========Home style Start========= */
+.home .container {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    height: 82vh;
+    background-color:  var(--sup-bg-color);
+    border-radius: 12px;
+}
+
+.home .container .content {
+    flex: 0 0 70%;
+    height: 100%;
+    background-color: red;
+}
+
+.home .container .img-container {
+    flex: 0 0 30%;
+    height: 100%;
+    background-color: green;
+}
+
+/* =========Home style End========= */
