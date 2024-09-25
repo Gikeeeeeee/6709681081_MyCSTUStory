@@ -127,7 +127,7 @@ nav .nav_items .item a:hover {
     text-align: justify;
     font-family: "Varela Round", sans-serif;
     color: var(--color-text);
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .home .container .content p:nth-child(2) {
@@ -196,8 +196,8 @@ nav .nav_items .item a:hover {
 }
 
 .Myjourney .journey_container .timeline .timeline-item .items:hover {
-    transform: scale(1.05); /* Increase size slightly */
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.3); /* Optional: make shadow more prominent */
+    transform: scale(1.05); 
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25), 0px 10px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .Myjourney .journey_container .timeline .timeline-item  .items .Myjourney-info {
@@ -212,7 +212,7 @@ nav .nav_items .item a:hover {
     font-size: 20px;
     text-transform: capitalize;
     color: var(--color-title);
-    font-family: "Varela Round", sans-serif;
+    font-family: "Old Standard TT", system-ui;
     margin-bottom: 5px;
 }
 
@@ -224,3 +224,72 @@ nav .nav_items .item a:hover {
 }
 
 /* ========= Journey style End ========= */
+/* ========= Future style Start ========= */
+.myfuture {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 100px;
+}
+
+.myfuture .future_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: auto;
+    padding: 0px 15px;
+}
+
+.myfuture .future_container .card {
+    flex: 0 0 calc(33.33% - 30px);
+    height: 350px;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background-color: var(--sup-bg-color);
+    box-shadow:  1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myfuture .future_container .card:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3),  3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.myfuture .future_container .card .time {
+    display: flex;
+    align-items: center;
+}
+
+.myfuture .future_container .card .time i {
+    font-size: 24px;
+}
+
+.myfuture .future_container .card .time .title {
+    margin-left: 8px;
+    font-size: 20px;
+    font-family: "Old Standard TT", system-ui;
+    font-weight: bold;
+}
+
+.myfuture .future_container .card  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-bg-color);
+    margin: 10px 0;
+}
+
+.myfuture .future_container .card .info .title {
+    color: var(--color-title);
+    margin-bottom: 8px;
+    font-family: "Old Standard TT", system-ui;
+    font-weight: bold;
+}
+.myfuture .future_container .card .info .text {
+    color: var(--color-text);
+    font-family: "Varela Round", system-ui;
+}
+/* ========= Future style End ========= */
